@@ -13,6 +13,6 @@ Das pesquisas realizadas existem diversas ferramentas colaborativas de partilha 
 
 # Funcionalidades
 - Gestão de projectos por cliente
-- Recolha direta da com acesso a base de dados PHC do cliente.
+- Recolha direta com acesso a base de dados PHC do cliente.
 - Motor de pequisa 
 - Filtros
