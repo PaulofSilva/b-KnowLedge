@@ -1,6 +1,6 @@
 # b-Knowledge
 
-Apliacação desenvolvida em .net c# WPF com base de dados MS SQL
+Apliacação desenvolvida em c#, camada visual em WPF e base de dados MS SQL,
 
 O objetivo deste projeto resulta da necessidade identificada no âmbito da atividade profissional enquanto consultor de software de gestão PHC, nesta atividade temos necessidade de desenvolver diversas rotinas de código em “xbase e sql”, para adaptação do software PHC ao modelo de negócio desenhado. 
 
