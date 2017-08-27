@@ -1,4 +1,4 @@
-# b-Knowledge
+ # b-Knowledge
 
 Apliacação desenvolvida em c#, camada visual em WPF e base de dados MS SQL,
 
@@ -8,5 +8,5 @@ Muito desse desenvolvimento pode e deve ser aproveitado para novos projetos, e p
 
 Este trabalho consiste em criar uma ferramenta que permita reunir todo o desenvolvimento realizado por entidade (cliente ou outros) e projeto, numa base de dados de forma classificada, e permitir a recolha e pesquisa de forma ágil. 
 
-#Motivação
+# Motivação
 Das pesquisas realizadas existem diversas ferramentas colaborativas de partilha de código, mas nenhuma responde a especificidade imposta pelo modelo de desenvolvimento da framework PHC, nomeadamente recolha direta da base de dados PHC do cliente.# b-KnowLedge
