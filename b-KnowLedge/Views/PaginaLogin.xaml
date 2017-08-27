@@ -1,0 +1,46 @@
+﻿<Window x:Class="b_KnowLedge.Views.PaginaLogin"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		  xmlns:wpfsl="http://schemas.softarcs.com/wpfsmartlibrary"
+        Title="PaginaLogin" Height="375" Width="300" Foreground="Transparent" BorderBrush="Transparent" Background="#202020" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" Icon="/b-KnowLedge;component/Imagens/b-knowledge icon small.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Column="0" Margin="0,40,0,0" Grid.Row="0" Source="/b-KnowLedge;component/Imagens/b-knowledge logo small_Login.png"/>
+        <TextBox Grid.Row="2" GotKeyboardFocus="LoginTextBox_GotKeyboardFocus_1" Initialized="LoginTextBox_Initialized_1" LostKeyboardFocus="LoginTextBox_LostKeyboardFocus_1"  Grid.Column="0" TextBlock.FontWeight="Bold" TextBlock.FontSize="14" TextBlock.TextAlignment="Justify" Margin="0,0,0,0"  Name="LoginTextBox" HorizontalAlignment="Center"  Height="24" TextWrapping="Wrap" Width="214" />
+        <PasswordBox Grid.Row="4" GotKeyboardFocus="PasswordText_GotKeyboardFocus_1" LostKeyboardFocus="PasswordText_LostKeyboardFocus_1" Initialized="PasswordText_Initialized_1" Grid.Column="0" TextBlock.FontWeight="Bold" TextBlock.FontSize="14" TextBlock.TextAlignment="Justify" Margin="0,0,0,0" Name="PasswordText" HorizontalAlignment="Center" Height="24" Width="214"/>
+
+        <Label Content="UserName:" Foreground="White" Grid.Row="1" Grid.Column="0" Margin="40,30,0,0" Height="23" FontWeight="Bold"/>
+        <Label Content="Password:" Foreground="White" Grid.Row="3" Grid.Column="0" Margin="40,10,0,0" Height="23" FontWeight="Bold"/>
+        <CheckBox Name="Guardar_Login" Grid.Column="0" Grid.Row="5" Margin="42,10,0,0" Content="Recordar Utilizador" TextBlock.Foreground="White" FontWeight="Bold" FontSize="12" />
+
+        <Button x:Name="Entrar_Login" Click="Entrar_Login_Click" Grid.Column="0" Grid.Row="6" Foreground="White" Background="#424242" TextBlock.FontWeight="Bold" HorizontalAlignment="Center" Margin="0,50,120,0" Content="Login" Height="20" Width="100">
+        </Button>
+
+        <Button x:Name="Cancel_Login" Click="Cancel_Login_Click" Grid.Column="0" Grid.Row="6" Foreground="White" Background="#424242" TextBlock.FontWeight="Bold" HorizontalAlignment="Center" Margin="120,50,0,0" Content="Cancel" Height="20" Width="100">
+        </Button>
+
+        <Button Grid.Row="8" Margin="0,20,5,0" Grid.Column="0" Name="Settings" Click="Settings_Click_1" HorizontalAlignment="Right" Background="Transparent" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"  Width="Auto" Height="Auto" BorderBrush="Transparent" BorderThickness="0">
+
+            <Image Source="/b-KnowLedge;component/Imagens/settings.png" Stretch="None"></Image>
+
+
+        </Button>
+
+    </Grid>
+</Window>

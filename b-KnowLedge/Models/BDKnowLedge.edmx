@@ -1,0 +1,1568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="Anexos" EntityType="Model.Store.Anexos" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="BasesDados" EntityType="Model.Store.BasesDados" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Conhecimentos" EntityType="Model.Store.Conhecimentos" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Entidades" EntityType="Model.Store.Entidades" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Pessoas" EntityType="Model.Store.Pessoas" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Projetos" EntityType="Model.Store.Projetos" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Subtipos" EntityType="Model.Store.Subtipos" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Tabelas" EntityType="Model.Store.Tabelas" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Tipos" EntityType="Model.Store.Tipos" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Utilizadores" EntityType="Model.Store.Utilizadores" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Anexos_Conhecimentos" Association="Model.Store.FK_Anexos_Conhecimentos">
+            <End Role="Conhecimentos" EntitySet="Conhecimentos" />
+            <End Role="Anexos" EntitySet="Anexos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anexos_Utilizadores_Ousrinis" Association="Model.Store.FK_Anexos_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Anexos" EntitySet="Anexos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anexos_Utilizadores_Usrinis" Association="Model.Store.FK_Anexos_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Anexos" EntitySet="Anexos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasesDados_Projetos" Association="Model.Store.FK_BasesDados_Projetos">
+            <End Role="Projetos" EntitySet="Projetos" />
+            <End Role="BasesDados" EntitySet="BasesDados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasesDados_Utilizadores_Ousrinis" Association="Model.Store.FK_BasesDados_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="BasesDados" EntitySet="BasesDados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasesDados_Utilizadores_Usrinis" Association="Model.Store.FK_BasesDados_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="BasesDados" EntitySet="BasesDados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conhecimentos_Projetos" Association="Model.Store.FK_Conhecimentos_Projetos">
+            <End Role="Projetos" EntitySet="Projetos" />
+            <End Role="Conhecimentos" EntitySet="Conhecimentos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conhecimentos_Utilizadores_Ousrinis" Association="Model.Store.FK_Conhecimentos_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Conhecimentos" EntitySet="Conhecimentos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conhecimentos_Utilizadores_Usrinis" Association="Model.Store.FK_Conhecimentos_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Conhecimentos" EntitySet="Conhecimentos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Entidades_Utilizadores_Ousrinis" Association="Model.Store.FK_Entidades_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Entidades" EntitySet="Entidades" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Entidades_Utilizadores_Usrinis" Association="Model.Store.FK_Entidades_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Entidades" EntitySet="Entidades" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pessoas_Entidades" Association="Model.Store.FK_Pessoas_Entidades">
+            <End Role="Entidades" EntitySet="Entidades" />
+            <End Role="Pessoas" EntitySet="Pessoas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pessoas_Utilizadores_Ousrinis" Association="Model.Store.FK_Pessoas_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Pessoas" EntitySet="Pessoas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pessoas_Utilizadores_Usrinis" Association="Model.Store.FK_Pessoas_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Pessoas" EntitySet="Pessoas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Projetos_Entidades" Association="Model.Store.FK_Projetos_Entidades">
+            <End Role="Entidades" EntitySet="Entidades" />
+            <End Role="Projetos" EntitySet="Projetos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Projetos_Utilizadores_Ousrinis" Association="Model.Store.FK_Projetos_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Projetos" EntitySet="Projetos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Projetos_Utilizadores_Usrinis" Association="Model.Store.FK_Projetos_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Projetos" EntitySet="Projetos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Subtipos_Tipos" Association="Model.Store.FK_Subtipos_Tipos">
+            <End Role="Tipos" EntitySet="Tipos" />
+            <End Role="Subtipos" EntitySet="Subtipos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Subtipos_Utilizadores_Ousrinis" Association="Model.Store.FK_Subtipos_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Subtipos" EntitySet="Subtipos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Subtipos_Utilizadores_Usrinis" Association="Model.Store.FK_Subtipos_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Subtipos" EntitySet="Subtipos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tabelas_Subtipos" Association="Model.Store.FK_Tabelas_Subtipos">
+            <End Role="Subtipos" EntitySet="Subtipos" />
+            <End Role="Tabelas" EntitySet="Tabelas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tabelas_Tipos" Association="Model.Store.FK_Tabelas_Tipos">
+            <End Role="Tipos" EntitySet="Tipos" />
+            <End Role="Tabelas" EntitySet="Tabelas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tabelas_Utilizadores_Ousrinis" Association="Model.Store.FK_Tabelas_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Tabelas" EntitySet="Tabelas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tabelas_Utilizadores_Usrinis" Association="Model.Store.FK_Tabelas_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Tabelas" EntitySet="Tabelas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tipos_Utilizadores_Ousrinis" Association="Model.Store.FK_Tipos_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Tipos" EntitySet="Tipos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tipos_Utilizadores_Usrinis" Association="Model.Store.FK_Tipos_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Tipos" EntitySet="Tipos" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Anexos">
+          <Key>
+            <PropertyRef Name="StampAnexo" />
+          </Key>
+          <Property Name="StampAnexo" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="StampConhecimento" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="NomeFicheiro" Type="varchar" MaxLength="200" />
+          <Property Name="Ficheiro" Type="varbinary(max)" />
+          <Property Name="Ousrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Ousrdata" Type="datetime" />
+          <Property Name="Ousrhora" Type="varchar" MaxLength="8" />
+          <Property Name="Usrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Usrdata" Type="datetime" />
+          <Property Name="Usrhora" Type="varchar" MaxLength="8" />
+          <Property Name="DataSincronizacao" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BasesDados">
+          <Key>
+            <PropertyRef Name="StampBaseDados" />
+          </Key>
+          <Property Name="StampBaseDados" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="StampProjeto" Type="varchar" MaxLength="25" />
+          <Property Name="Servername" Type="varchar" MaxLength="50" />
+          <Property Name="UserID" Type="varchar" MaxLength="15" />
+          <Property Name="Password" Type="varchar" MaxLength="25" />
+          <Property Name="Initialcatalog" Type="varchar" MaxLength="100" />
+          <Property Name="Encrypt" Type="bit" />
+          <Property Name="Trustservercertificate" Type="bit" />
+          <Property Name="Ousrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Ousrdata" Type="datetime" />
+          <Property Name="Ousrhora" Type="varchar" MaxLength="8" />
+          <Property Name="Usrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Usrdata" Type="datetime" />
+          <Property Name="Usrhora" Type="varchar" MaxLength="8" />
+          <Property Name="DataSincronizacao" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Conhecimentos">
+          <Key>
+            <PropertyRef Name="StampConhecimento" />
+          </Key>
+          <Property Name="StampConhecimento" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="StampProjeto" Type="varchar" MaxLength="25" />
+          <Property Name="StampSubtipo" Type="varchar" MaxLength="25" />
+          <Property Name="StampTipo" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="Descricao" Type="varchar" MaxLength="500" />
+          <Property Name="Codigo" Type="text" />
+          <Property Name="Metadados" Type="varchar" MaxLength="100" />
+          <Property Name="Ecra" Type="varchar" MaxLength="100" />
+          <Property Name="Mensagem" Type="varchar" MaxLength="500" />
+          <Property Name="Teclas" Type="varchar" MaxLength="200" />
+          <Property Name="Tabela" Type="varchar" MaxLength="200" />
+          <Property Name="NivelAprovacao" Type="int" />
+          <Property Name="Ousrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Ousrdata" Type="datetime" />
+          <Property Name="Ousrhora" Type="varchar" MaxLength="8" />
+          <Property Name="Usrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Usrdata" Type="datetime" />
+          <Property Name="Usrhora" Type="varchar" MaxLength="8" />
+          <Property Name="DataSincronizacao" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Entidades">
+          <Key>
+            <PropertyRef Name="StampEntidade" />
+          </Key>
+          <Property Name="StampEntidade" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="Nome" Type="varchar" MaxLength="70" />
+          <Property Name="Morada" Type="varchar" MaxLength="100" />
+          <Property Name="Localidade" Type="varchar" MaxLength="50" />
+          <Property Name="CodPostal" Type="varchar" MaxLength="45" />
+          <Property Name="Telemovel" Type="varchar" MaxLength="15" />
+          <Property Name="Telefone" Type="varchar" MaxLength="15" />
+          <Property Name="Fax" Type="varchar" MaxLength="100" />
+          <Property Name="Numero" Type="varchar" MaxLength="20" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="Site" Type="varchar" MaxLength="100" />
+          <Property Name="Ousrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Ousrdata" Type="datetime" />
+          <Property Name="Ousrhora" Type="varchar" MaxLength="8" />
+          <Property Name="Usrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Usrdata" Type="datetime" />
+          <Property Name="Usrhora" Type="varchar" MaxLength="8" />
+          <Property Name="DataSincronizacao" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Pessoas">
+          <Key>
+            <PropertyRef Name="StampPessoa" />
+          </Key>
+          <Property Name="StampPessoa" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="StampEntidades" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="Nome" Type="varchar" Nullable="false" MaxLength="70" />
+          <Property Name="Morada" Type="varchar" MaxLength="100" />
+          <Property Name="Localidade" Type="varchar" MaxLength="50" />
+          <Property Name="CodPostal" Type="varchar" MaxLength="45" />
+          <Property Name="Telemovel" Type="varchar" MaxLength="15" />
+          <Property Name="Telefone" Type="varchar" MaxLength="15" />
+          <Property Name="Fax" Type="varchar" MaxLength="100" />
+          <Property Name="Numero" Type="varchar" MaxLength="20" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="Site" Type="varchar" MaxLength="100" />
+          <Property Name="Foto" Type="image" />
+          <Property Name="Ousrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Ousrdata" Type="datetime" />
+          <Property Name="Ousrhora" Type="varchar" MaxLength="8" />
+          <Property Name="Usrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Usrdata" Type="datetime" />
+          <Property Name="Usrhora" Type="varchar" MaxLength="8" />
+          <Property Name="DataSincronizacao" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Projetos">
+          <Key>
+            <PropertyRef Name="StampProjeto" />
+          </Key>
+          <Property Name="StampProjeto" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="StampEntidade" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="Nome" Type="varchar" MaxLength="70" />
+          <Property Name="Morada" Type="varchar" MaxLength="100" />
+          <Property Name="Localidade" Type="varchar" MaxLength="50" />
+          <Property Name="CodPostal" Type="varchar" MaxLength="45" />
+          <Property Name="Telemovel" Type="varchar" MaxLength="15" />
+          <Property Name="Telefone" Type="varchar" MaxLength="15" />
+          <Property Name="Fax" Type="varchar" MaxLength="100" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="Site" Type="varchar" MaxLength="100" />
+          <Property Name="Descricacao" Type="varchar(max)" Nullable="false" />
+          <Property Name="Ousrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Ousrdata" Type="datetime" />
+          <Property Name="Ousrhora" Type="varchar" MaxLength="8" />
+          <Property Name="Usrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Usrdata" Type="datetime" />
+          <Property Name="Usrhora" Type="varchar" MaxLength="8" />
+          <Property Name="NomeConsultor" Type="varchar" MaxLength="70" />
+          <Property Name="DataSincronizacao" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Subtipos">
+          <Key>
+            <PropertyRef Name="StampSubtipo" />
+          </Key>
+          <Property Name="StampSubtipo" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="StampTipo" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="Nome" Type="varchar" MaxLength="100" />
+          <Property Name="Descricao" Type="varchar" MaxLength="500" />
+          <Property Name="Ousrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Ousrdata" Type="datetime" />
+          <Property Name="Ousrhora" Type="varchar" MaxLength="8" />
+          <Property Name="Usrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Usrdata" Type="datetime" />
+          <Property Name="Usrhora" Type="varchar" MaxLength="8" />
+          <Property Name="DataSincronizacao" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Tabelas">
+          <Key>
+            <PropertyRef Name="StampTabela" />
+          </Key>
+          <Property Name="StampTabela" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="StampTipo" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="StampSubtipo" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="Descricao" Type="varchar(max)" Nullable="false" />
+          <Property Name="QueryString" Type="text" />
+          <Property Name="Ousrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Ousrdata" Type="datetime" />
+          <Property Name="Ousrhora" Type="varchar" MaxLength="8" />
+          <Property Name="Usrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Usrdata" Type="datetime" />
+          <Property Name="Usrhora" Type="varchar" MaxLength="8" />
+          <Property Name="DataSincronizacao" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Tipos">
+          <Key>
+            <PropertyRef Name="StampTipo" />
+          </Key>
+          <Property Name="StampTipo" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="Nome" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Descricao" Type="varchar" MaxLength="500" />
+          <Property Name="Ousrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Ousrdata" Type="datetime" />
+          <Property Name="Ousrhora" Type="varchar" MaxLength="8" />
+          <Property Name="Usrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Usrdata" Type="datetime" />
+          <Property Name="Usrhora" Type="varchar" MaxLength="8" />
+          <Property Name="DataSincronizacao" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Utilizadores">
+          <Key>
+            <PropertyRef Name="StampUtilizador" />
+          </Key>
+          <Property Name="StampUtilizador" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="Nome" Type="varchar" MaxLength="70" />
+          <Property Name="Morada" Type="varchar" MaxLength="100" />
+          <Property Name="Localidade" Type="varchar" MaxLength="50" />
+          <Property Name="CodPostal" Type="varchar" MaxLength="45" />
+          <Property Name="Telemovel" Type="varchar" MaxLength="15" />
+          <Property Name="Username" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="Password" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="Foto" Type="image" />
+          <Property Name="Ousrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Ousrdata" Type="datetime" />
+          <Property Name="Ousrhora" Type="varchar" MaxLength="8" />
+          <Property Name="Usrinis" Type="varchar" MaxLength="25" />
+          <Property Name="Usrdata" Type="datetime" />
+          <Property Name="Usrhora" Type="varchar" MaxLength="8" />
+          <Property Name="DataSincronizacao" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_Anexos_Conhecimentos">
+          <End Role="Conhecimentos" Type="Model.Store.Conhecimentos" Multiplicity="1" />
+          <End Role="Anexos" Type="Model.Store.Anexos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Conhecimentos">
+              <PropertyRef Name="StampConhecimento" />
+            </Principal>
+            <Dependent Role="Anexos">
+              <PropertyRef Name="StampConhecimento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anexos_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Anexos" Type="Model.Store.Anexos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Anexos">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anexos_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Anexos" Type="Model.Store.Anexos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Anexos">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasesDados_Projetos">
+          <End Role="Projetos" Type="Model.Store.Projetos" Multiplicity="0..1" />
+          <End Role="BasesDados" Type="Model.Store.BasesDados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projetos">
+              <PropertyRef Name="StampProjeto" />
+            </Principal>
+            <Dependent Role="BasesDados">
+              <PropertyRef Name="StampProjeto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasesDados_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="BasesDados" Type="Model.Store.BasesDados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="BasesDados">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasesDados_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="BasesDados" Type="Model.Store.BasesDados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="BasesDados">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conhecimentos_Projetos">
+          <End Role="Projetos" Type="Model.Store.Projetos" Multiplicity="0..1" />
+          <End Role="Conhecimentos" Type="Model.Store.Conhecimentos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projetos">
+              <PropertyRef Name="StampProjeto" />
+            </Principal>
+            <Dependent Role="Conhecimentos">
+              <PropertyRef Name="StampProjeto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conhecimentos_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Conhecimentos" Type="Model.Store.Conhecimentos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Conhecimentos">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conhecimentos_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Conhecimentos" Type="Model.Store.Conhecimentos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Conhecimentos">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Entidades_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Entidades" Type="Model.Store.Entidades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Entidades">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Entidades_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Entidades" Type="Model.Store.Entidades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Entidades">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pessoas_Entidades">
+          <End Role="Entidades" Type="Model.Store.Entidades" Multiplicity="1" />
+          <End Role="Pessoas" Type="Model.Store.Pessoas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Entidades">
+              <PropertyRef Name="StampEntidade" />
+            </Principal>
+            <Dependent Role="Pessoas">
+              <PropertyRef Name="StampEntidades" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pessoas_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Pessoas" Type="Model.Store.Pessoas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Pessoas">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pessoas_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Pessoas" Type="Model.Store.Pessoas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Pessoas">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Projetos_Entidades">
+          <End Role="Entidades" Type="Model.Store.Entidades" Multiplicity="1" />
+          <End Role="Projetos" Type="Model.Store.Projetos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Entidades">
+              <PropertyRef Name="StampEntidade" />
+            </Principal>
+            <Dependent Role="Projetos">
+              <PropertyRef Name="StampEntidade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Projetos_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Projetos" Type="Model.Store.Projetos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Projetos">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Projetos_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Projetos" Type="Model.Store.Projetos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Projetos">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Subtipos_Tipos">
+          <End Role="Tipos" Type="Model.Store.Tipos" Multiplicity="1" />
+          <End Role="Subtipos" Type="Model.Store.Subtipos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipos">
+              <PropertyRef Name="StampTipo" />
+            </Principal>
+            <Dependent Role="Subtipos">
+              <PropertyRef Name="StampTipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Subtipos_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Subtipos" Type="Model.Store.Subtipos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Subtipos">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Subtipos_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Subtipos" Type="Model.Store.Subtipos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Subtipos">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tabelas_Subtipos">
+          <End Role="Subtipos" Type="Model.Store.Subtipos" Multiplicity="1" />
+          <End Role="Tabelas" Type="Model.Store.Tabelas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subtipos">
+              <PropertyRef Name="StampSubtipo" />
+            </Principal>
+            <Dependent Role="Tabelas">
+              <PropertyRef Name="StampSubtipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tabelas_Tipos">
+          <End Role="Tipos" Type="Model.Store.Tipos" Multiplicity="1" />
+          <End Role="Tabelas" Type="Model.Store.Tabelas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipos">
+              <PropertyRef Name="StampTipo" />
+            </Principal>
+            <Dependent Role="Tabelas">
+              <PropertyRef Name="StampTipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tabelas_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Tabelas" Type="Model.Store.Tabelas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Tabelas">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tabelas_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Tabelas" Type="Model.Store.Tabelas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Tabelas">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tipos_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Tipos" Type="Model.Store.Tipos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Tipos">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tipos_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Store.Utilizadores" Multiplicity="0..1" />
+          <End Role="Tipos" Type="Model.Store.Tipos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Tipos">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="BDKnowLedge" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Anexos" EntityType="Model.Anexos" />
+          <EntitySet Name="BasesDados" EntityType="Model.BasesDados" />
+          <EntitySet Name="Conhecimentos" EntityType="Model.Conhecimentos" />
+          <EntitySet Name="Entidades" EntityType="Model.Entidades" />
+          <EntitySet Name="Pessoas" EntityType="Model.Pessoas" />
+          <EntitySet Name="Projetos" EntityType="Model.Projetos" />
+          <EntitySet Name="Subtipos" EntityType="Model.Subtipos" />
+          <EntitySet Name="Tabelas" EntityType="Model.Tabelas" />
+          <EntitySet Name="Tipos" EntityType="Model.Tipos" />
+          <EntitySet Name="Utilizadores" EntityType="Model.Utilizadores" />
+          <AssociationSet Name="FK_Anexos_Conhecimentos" Association="Model.FK_Anexos_Conhecimentos">
+            <End Role="Conhecimentos" EntitySet="Conhecimentos" />
+            <End Role="Anexos" EntitySet="Anexos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anexos_Utilizadores_Ousrinis" Association="Model.FK_Anexos_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Anexos" EntitySet="Anexos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anexos_Utilizadores_Usrinis" Association="Model.FK_Anexos_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Anexos" EntitySet="Anexos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasesDados_Projetos" Association="Model.FK_BasesDados_Projetos">
+            <End Role="Projetos" EntitySet="Projetos" />
+            <End Role="BasesDados" EntitySet="BasesDados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasesDados_Utilizadores_Ousrinis" Association="Model.FK_BasesDados_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="BasesDados" EntitySet="BasesDados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BasesDados_Utilizadores_Usrinis" Association="Model.FK_BasesDados_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="BasesDados" EntitySet="BasesDados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conhecimentos_Projetos" Association="Model.FK_Conhecimentos_Projetos">
+            <End Role="Projetos" EntitySet="Projetos" />
+            <End Role="Conhecimentos" EntitySet="Conhecimentos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conhecimentos_Utilizadores_Ousrinis" Association="Model.FK_Conhecimentos_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Conhecimentos" EntitySet="Conhecimentos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conhecimentos_Utilizadores_Usrinis" Association="Model.FK_Conhecimentos_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Conhecimentos" EntitySet="Conhecimentos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Entidades_Utilizadores_Ousrinis" Association="Model.FK_Entidades_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Entidades" EntitySet="Entidades" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Entidades_Utilizadores_Usrinis" Association="Model.FK_Entidades_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Entidades" EntitySet="Entidades" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pessoas_Entidades" Association="Model.FK_Pessoas_Entidades">
+            <End Role="Entidades" EntitySet="Entidades" />
+            <End Role="Pessoas" EntitySet="Pessoas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Projetos_Entidades" Association="Model.FK_Projetos_Entidades">
+            <End Role="Entidades" EntitySet="Entidades" />
+            <End Role="Projetos" EntitySet="Projetos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pessoas_Utilizadores_Ousrinis" Association="Model.FK_Pessoas_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Pessoas" EntitySet="Pessoas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pessoas_Utilizadores_Usrinis" Association="Model.FK_Pessoas_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Pessoas" EntitySet="Pessoas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Projetos_Utilizadores_Ousrinis" Association="Model.FK_Projetos_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Projetos" EntitySet="Projetos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Projetos_Utilizadores_Usrinis" Association="Model.FK_Projetos_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Projetos" EntitySet="Projetos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Subtipos_Tipos" Association="Model.FK_Subtipos_Tipos">
+            <End Role="Tipos" EntitySet="Tipos" />
+            <End Role="Subtipos" EntitySet="Subtipos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Subtipos_Utilizadores_Ousrinis" Association="Model.FK_Subtipos_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Subtipos" EntitySet="Subtipos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Subtipos_Utilizadores_Usrinis" Association="Model.FK_Subtipos_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Subtipos" EntitySet="Subtipos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tabelas_Subtipos" Association="Model.FK_Tabelas_Subtipos">
+            <End Role="Subtipos" EntitySet="Subtipos" />
+            <End Role="Tabelas" EntitySet="Tabelas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tabelas_Tipos" Association="Model.FK_Tabelas_Tipos">
+            <End Role="Tipos" EntitySet="Tipos" />
+            <End Role="Tabelas" EntitySet="Tabelas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tabelas_Utilizadores_Ousrinis" Association="Model.FK_Tabelas_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Tabelas" EntitySet="Tabelas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tabelas_Utilizadores_Usrinis" Association="Model.FK_Tabelas_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Tabelas" EntitySet="Tabelas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tipos_Utilizadores_Ousrinis" Association="Model.FK_Tipos_Utilizadores_Ousrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Tipos" EntitySet="Tipos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tipos_Utilizadores_Usrinis" Association="Model.FK_Tipos_Utilizadores_Usrinis">
+            <End Role="Utilizadores" EntitySet="Utilizadores" />
+            <End Role="Tipos" EntitySet="Tipos" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Anexos">
+          <Key>
+            <PropertyRef Name="StampAnexo" />
+          </Key>
+          <Property Name="StampAnexo" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="StampConhecimento" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="NomeFicheiro" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Ficheiro" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Ousrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrdata" Type="DateTime" Precision="3" />
+          <Property Name="Ousrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="Usrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Usrdata" Type="DateTime" Precision="3" />
+          <Property Name="Usrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="DataSincronizacao" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Conhecimentos" Relationship="Model.FK_Anexos_Conhecimentos" FromRole="Anexos" ToRole="Conhecimentos" />
+          <NavigationProperty Name="Utilizadores" Relationship="Model.FK_Anexos_Utilizadores_Ousrinis" FromRole="Anexos" ToRole="Utilizadores" />
+          <NavigationProperty Name="Utilizadores1" Relationship="Model.FK_Anexos_Utilizadores_Usrinis" FromRole="Anexos" ToRole="Utilizadores" />
+        </EntityType>
+        <EntityType Name="BasesDados">
+          <Key>
+            <PropertyRef Name="StampBaseDados" />
+          </Key>
+          <Property Name="StampBaseDados" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="StampProjeto" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Servername" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="UserID" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="Password" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Initialcatalog" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Encrypt" Type="Boolean" />
+          <Property Name="Trustservercertificate" Type="Boolean" />
+          <Property Name="Ousrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrdata" Type="DateTime" Precision="3" />
+          <Property Name="Ousrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="Usrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Usrdata" Type="DateTime" Precision="3" />
+          <Property Name="Usrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="DataSincronizacao" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Projetos" Relationship="Model.FK_BasesDados_Projetos" FromRole="BasesDados" ToRole="Projetos" />
+          <NavigationProperty Name="Utilizadores" Relationship="Model.FK_BasesDados_Utilizadores_Ousrinis" FromRole="BasesDados" ToRole="Utilizadores" />
+          <NavigationProperty Name="Utilizadores1" Relationship="Model.FK_BasesDados_Utilizadores_Usrinis" FromRole="BasesDados" ToRole="Utilizadores" />
+        </EntityType>
+        <EntityType Name="Conhecimentos">
+          <Key>
+            <PropertyRef Name="StampConhecimento" />
+          </Key>
+          <Property Name="StampConhecimento" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="StampProjeto" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="StampSubtipo" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="StampTipo" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Descricao" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Codigo" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Metadados" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Ecra" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Mensagem" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Teclas" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Tabela" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="NivelAprovacao" Type="Int32" />
+          <Property Name="Ousrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrdata" Type="DateTime" Precision="3" />
+          <Property Name="Ousrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="Usrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Usrdata" Type="DateTime" Precision="3" />
+          <Property Name="Usrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="DataSincronizacao" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Anexos" Relationship="Model.FK_Anexos_Conhecimentos" FromRole="Conhecimentos" ToRole="Anexos" />
+          <NavigationProperty Name="Projetos" Relationship="Model.FK_Conhecimentos_Projetos" FromRole="Conhecimentos" ToRole="Projetos" />
+          <NavigationProperty Name="Utilizadores" Relationship="Model.FK_Conhecimentos_Utilizadores_Ousrinis" FromRole="Conhecimentos" ToRole="Utilizadores" />
+          <NavigationProperty Name="Utilizadores1" Relationship="Model.FK_Conhecimentos_Utilizadores_Usrinis" FromRole="Conhecimentos" ToRole="Utilizadores" />
+        </EntityType>
+        <EntityType Name="Entidades">
+          <Key>
+            <PropertyRef Name="StampEntidade" />
+          </Key>
+          <Property Name="StampEntidade" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Nome" Type="String" MaxLength="70" Unicode="false" FixedLength="false" />
+          <Property Name="Morada" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Localidade" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CodPostal" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="Telemovel" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="Telefone" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="Fax" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Numero" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Site" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrdata" Type="DateTime" Precision="3" />
+          <Property Name="Ousrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="Usrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Usrdata" Type="DateTime" Precision="3" />
+          <Property Name="Usrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="DataSincronizacao" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Utilizadores" Relationship="Model.FK_Entidades_Utilizadores_Ousrinis" FromRole="Entidades" ToRole="Utilizadores" />
+          <NavigationProperty Name="Utilizadores1" Relationship="Model.FK_Entidades_Utilizadores_Usrinis" FromRole="Entidades" ToRole="Utilizadores" />
+          <NavigationProperty Name="Pessoas" Relationship="Model.FK_Pessoas_Entidades" FromRole="Entidades" ToRole="Pessoas" />
+          <NavigationProperty Name="Projetos" Relationship="Model.FK_Projetos_Entidades" FromRole="Entidades" ToRole="Projetos" />
+        </EntityType>
+        <EntityType Name="Pessoas">
+          <Key>
+            <PropertyRef Name="StampPessoa" />
+          </Key>
+          <Property Name="StampPessoa" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="StampEntidades" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Nome" Type="String" Nullable="false" MaxLength="70" Unicode="false" FixedLength="false" />
+          <Property Name="Morada" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Localidade" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CodPostal" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="Telemovel" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="Telefone" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="Fax" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Numero" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Site" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Ousrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrdata" Type="DateTime" Precision="3" />
+          <Property Name="Ousrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="Usrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Usrdata" Type="DateTime" Precision="3" />
+          <Property Name="Usrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="DataSincronizacao" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Entidades" Relationship="Model.FK_Pessoas_Entidades" FromRole="Pessoas" ToRole="Entidades" />
+          <NavigationProperty Name="Utilizadores" Relationship="Model.FK_Pessoas_Utilizadores_Ousrinis" FromRole="Pessoas" ToRole="Utilizadores" />
+          <NavigationProperty Name="Utilizadores1" Relationship="Model.FK_Pessoas_Utilizadores_Usrinis" FromRole="Pessoas" ToRole="Utilizadores" />
+        </EntityType>
+        <EntityType Name="Projetos">
+          <Key>
+            <PropertyRef Name="StampProjeto" />
+          </Key>
+          <Property Name="StampProjeto" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="StampEntidade" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Nome" Type="String" MaxLength="70" Unicode="false" FixedLength="false" />
+          <Property Name="Morada" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Localidade" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CodPostal" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="Telemovel" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="Telefone" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="Fax" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Site" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Descricacao" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrdata" Type="DateTime" Precision="3" />
+          <Property Name="Ousrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="Usrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Usrdata" Type="DateTime" Precision="3" />
+          <Property Name="Usrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="NomeConsultor" Type="String" MaxLength="70" Unicode="false" FixedLength="false" />
+          <Property Name="DataSincronizacao" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="BasesDados" Relationship="Model.FK_BasesDados_Projetos" FromRole="Projetos" ToRole="BasesDados" />
+          <NavigationProperty Name="Conhecimentos" Relationship="Model.FK_Conhecimentos_Projetos" FromRole="Projetos" ToRole="Conhecimentos" />
+          <NavigationProperty Name="Entidades" Relationship="Model.FK_Projetos_Entidades" FromRole="Projetos" ToRole="Entidades" />
+          <NavigationProperty Name="Utilizadores" Relationship="Model.FK_Projetos_Utilizadores_Ousrinis" FromRole="Projetos" ToRole="Utilizadores" />
+          <NavigationProperty Name="Utilizadores1" Relationship="Model.FK_Projetos_Utilizadores_Usrinis" FromRole="Projetos" ToRole="Utilizadores" />
+        </EntityType>
+        <EntityType Name="Subtipos">
+          <Key>
+            <PropertyRef Name="StampSubtipo" />
+          </Key>
+          <Property Name="StampSubtipo" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="StampTipo" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Nome" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Descricao" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrdata" Type="DateTime" Precision="3" />
+          <Property Name="Ousrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="Usrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Usrdata" Type="DateTime" Precision="3" />
+          <Property Name="Usrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="DataSincronizacao" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Tipos" Relationship="Model.FK_Subtipos_Tipos" FromRole="Subtipos" ToRole="Tipos" />
+          <NavigationProperty Name="Utilizadores" Relationship="Model.FK_Subtipos_Utilizadores_Ousrinis" FromRole="Subtipos" ToRole="Utilizadores" />
+          <NavigationProperty Name="Utilizadores1" Relationship="Model.FK_Subtipos_Utilizadores_Usrinis" FromRole="Subtipos" ToRole="Utilizadores" />
+          <NavigationProperty Name="Tabelas" Relationship="Model.FK_Tabelas_Subtipos" FromRole="Subtipos" ToRole="Tabelas" />
+        </EntityType>
+        <EntityType Name="Tabelas">
+          <Key>
+            <PropertyRef Name="StampTabela" />
+          </Key>
+          <Property Name="StampTabela" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="StampTipo" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="StampSubtipo" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Descricao" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="QueryString" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrdata" Type="DateTime" Precision="3" />
+          <Property Name="Ousrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="Usrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Usrdata" Type="DateTime" Precision="3" />
+          <Property Name="Usrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="DataSincronizacao" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Subtipos" Relationship="Model.FK_Tabelas_Subtipos" FromRole="Tabelas" ToRole="Subtipos" />
+          <NavigationProperty Name="Tipos" Relationship="Model.FK_Tabelas_Tipos" FromRole="Tabelas" ToRole="Tipos" />
+          <NavigationProperty Name="Utilizadores" Relationship="Model.FK_Tabelas_Utilizadores_Ousrinis" FromRole="Tabelas" ToRole="Utilizadores" />
+          <NavigationProperty Name="Utilizadores1" Relationship="Model.FK_Tabelas_Utilizadores_Usrinis" FromRole="Tabelas" ToRole="Utilizadores" />
+        </EntityType>
+        <EntityType Name="Tipos">
+          <Key>
+            <PropertyRef Name="StampTipo" />
+          </Key>
+          <Property Name="StampTipo" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Nome" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Descricao" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrdata" Type="DateTime" Precision="3" />
+          <Property Name="Ousrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="Usrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Usrdata" Type="DateTime" Precision="3" />
+          <Property Name="Usrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="DataSincronizacao" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Subtipos" Relationship="Model.FK_Subtipos_Tipos" FromRole="Tipos" ToRole="Subtipos" />
+          <NavigationProperty Name="Tabelas" Relationship="Model.FK_Tabelas_Tipos" FromRole="Tipos" ToRole="Tabelas" />
+          <NavigationProperty Name="Utilizadores" Relationship="Model.FK_Tipos_Utilizadores_Ousrinis" FromRole="Tipos" ToRole="Utilizadores" />
+          <NavigationProperty Name="Utilizadores1" Relationship="Model.FK_Tipos_Utilizadores_Usrinis" FromRole="Tipos" ToRole="Utilizadores" />
+        </EntityType>
+        <EntityType Name="Utilizadores">
+          <Key>
+            <PropertyRef Name="StampUtilizador" />
+          </Key>
+          <Property Name="StampUtilizador" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Nome" Type="String" MaxLength="70" Unicode="false" FixedLength="false" />
+          <Property Name="Morada" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Localidade" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CodPostal" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="Telemovel" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="Username" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Ousrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Ousrdata" Type="DateTime" Precision="3" />
+          <Property Name="Ousrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="Usrinis" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Usrdata" Type="DateTime" Precision="3" />
+          <Property Name="Usrhora" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="DataSincronizacao" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Anexos" Relationship="Model.FK_Anexos_Utilizadores_Ousrinis" FromRole="Utilizadores" ToRole="Anexos" />
+          <NavigationProperty Name="Anexos1" Relationship="Model.FK_Anexos_Utilizadores_Usrinis" FromRole="Utilizadores" ToRole="Anexos" />
+          <NavigationProperty Name="BasesDados" Relationship="Model.FK_BasesDados_Utilizadores_Ousrinis" FromRole="Utilizadores" ToRole="BasesDados" />
+          <NavigationProperty Name="BasesDados1" Relationship="Model.FK_BasesDados_Utilizadores_Usrinis" FromRole="Utilizadores" ToRole="BasesDados" />
+          <NavigationProperty Name="Conhecimentos" Relationship="Model.FK_Conhecimentos_Utilizadores_Ousrinis" FromRole="Utilizadores" ToRole="Conhecimentos" />
+          <NavigationProperty Name="Conhecimentos1" Relationship="Model.FK_Conhecimentos_Utilizadores_Usrinis" FromRole="Utilizadores" ToRole="Conhecimentos" />
+          <NavigationProperty Name="Entidades" Relationship="Model.FK_Entidades_Utilizadores_Ousrinis" FromRole="Utilizadores" ToRole="Entidades" />
+          <NavigationProperty Name="Entidades1" Relationship="Model.FK_Entidades_Utilizadores_Usrinis" FromRole="Utilizadores" ToRole="Entidades" />
+          <NavigationProperty Name="Pessoas" Relationship="Model.FK_Pessoas_Utilizadores_Ousrinis" FromRole="Utilizadores" ToRole="Pessoas" />
+          <NavigationProperty Name="Pessoas1" Relationship="Model.FK_Pessoas_Utilizadores_Usrinis" FromRole="Utilizadores" ToRole="Pessoas" />
+          <NavigationProperty Name="Projetos" Relationship="Model.FK_Projetos_Utilizadores_Ousrinis" FromRole="Utilizadores" ToRole="Projetos" />
+          <NavigationProperty Name="Projetos1" Relationship="Model.FK_Projetos_Utilizadores_Usrinis" FromRole="Utilizadores" ToRole="Projetos" />
+          <NavigationProperty Name="Subtipos" Relationship="Model.FK_Subtipos_Utilizadores_Ousrinis" FromRole="Utilizadores" ToRole="Subtipos" />
+          <NavigationProperty Name="Subtipos1" Relationship="Model.FK_Subtipos_Utilizadores_Usrinis" FromRole="Utilizadores" ToRole="Subtipos" />
+          <NavigationProperty Name="Tabelas" Relationship="Model.FK_Tabelas_Utilizadores_Ousrinis" FromRole="Utilizadores" ToRole="Tabelas" />
+          <NavigationProperty Name="Tabelas1" Relationship="Model.FK_Tabelas_Utilizadores_Usrinis" FromRole="Utilizadores" ToRole="Tabelas" />
+          <NavigationProperty Name="Tipos" Relationship="Model.FK_Tipos_Utilizadores_Ousrinis" FromRole="Utilizadores" ToRole="Tipos" />
+          <NavigationProperty Name="Tipos1" Relationship="Model.FK_Tipos_Utilizadores_Usrinis" FromRole="Utilizadores" ToRole="Tipos" />
+        </EntityType>
+        <Association Name="FK_Anexos_Conhecimentos">
+          <End Role="Conhecimentos" Type="Model.Conhecimentos" Multiplicity="1" />
+          <End Role="Anexos" Type="Model.Anexos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Conhecimentos">
+              <PropertyRef Name="StampConhecimento" />
+            </Principal>
+            <Dependent Role="Anexos">
+              <PropertyRef Name="StampConhecimento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anexos_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Anexos" Type="Model.Anexos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Anexos">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anexos_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Anexos" Type="Model.Anexos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Anexos">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasesDados_Projetos">
+          <End Role="Projetos" Type="Model.Projetos" Multiplicity="0..1" />
+          <End Role="BasesDados" Type="Model.BasesDados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projetos">
+              <PropertyRef Name="StampProjeto" />
+            </Principal>
+            <Dependent Role="BasesDados">
+              <PropertyRef Name="StampProjeto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasesDados_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="BasesDados" Type="Model.BasesDados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="BasesDados">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BasesDados_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="BasesDados" Type="Model.BasesDados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="BasesDados">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conhecimentos_Projetos">
+          <End Role="Projetos" Type="Model.Projetos" Multiplicity="0..1" />
+          <End Role="Conhecimentos" Type="Model.Conhecimentos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projetos">
+              <PropertyRef Name="StampProjeto" />
+            </Principal>
+            <Dependent Role="Conhecimentos">
+              <PropertyRef Name="StampProjeto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conhecimentos_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Conhecimentos" Type="Model.Conhecimentos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Conhecimentos">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conhecimentos_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Conhecimentos" Type="Model.Conhecimentos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Conhecimentos">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Entidades_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Entidades" Type="Model.Entidades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Entidades">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Entidades_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Entidades" Type="Model.Entidades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Entidades">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pessoas_Entidades">
+          <End Role="Entidades" Type="Model.Entidades" Multiplicity="1" />
+          <End Role="Pessoas" Type="Model.Pessoas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Entidades">
+              <PropertyRef Name="StampEntidade" />
+            </Principal>
+            <Dependent Role="Pessoas">
+              <PropertyRef Name="StampEntidades" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Projetos_Entidades">
+          <End Role="Entidades" Type="Model.Entidades" Multiplicity="1" />
+          <End Role="Projetos" Type="Model.Projetos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Entidades">
+              <PropertyRef Name="StampEntidade" />
+            </Principal>
+            <Dependent Role="Projetos">
+              <PropertyRef Name="StampEntidade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pessoas_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Pessoas" Type="Model.Pessoas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Pessoas">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pessoas_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Pessoas" Type="Model.Pessoas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Pessoas">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Projetos_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Projetos" Type="Model.Projetos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Projetos">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Projetos_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Projetos" Type="Model.Projetos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Projetos">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Subtipos_Tipos">
+          <End Role="Tipos" Type="Model.Tipos" Multiplicity="1" />
+          <End Role="Subtipos" Type="Model.Subtipos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipos">
+              <PropertyRef Name="StampTipo" />
+            </Principal>
+            <Dependent Role="Subtipos">
+              <PropertyRef Name="StampTipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Subtipos_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Subtipos" Type="Model.Subtipos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Subtipos">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Subtipos_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Subtipos" Type="Model.Subtipos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Subtipos">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tabelas_Subtipos">
+          <End Role="Subtipos" Type="Model.Subtipos" Multiplicity="1" />
+          <End Role="Tabelas" Type="Model.Tabelas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subtipos">
+              <PropertyRef Name="StampSubtipo" />
+            </Principal>
+            <Dependent Role="Tabelas">
+              <PropertyRef Name="StampSubtipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tabelas_Tipos">
+          <End Role="Tipos" Type="Model.Tipos" Multiplicity="1" />
+          <End Role="Tabelas" Type="Model.Tabelas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipos">
+              <PropertyRef Name="StampTipo" />
+            </Principal>
+            <Dependent Role="Tabelas">
+              <PropertyRef Name="StampTipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tabelas_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Tabelas" Type="Model.Tabelas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Tabelas">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tabelas_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Tabelas" Type="Model.Tabelas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Tabelas">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tipos_Utilizadores_Ousrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Tipos" Type="Model.Tipos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Tipos">
+              <PropertyRef Name="Ousrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tipos_Utilizadores_Usrinis">
+          <End Role="Utilizadores" Type="Model.Utilizadores" Multiplicity="0..1" />
+          <End Role="Tipos" Type="Model.Tipos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Utilizadores">
+              <PropertyRef Name="StampUtilizador" />
+            </Principal>
+            <Dependent Role="Tipos">
+              <PropertyRef Name="Usrinis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="BDKnowLedge">
+          <EntitySetMapping Name="Anexos">
+            <EntityTypeMapping TypeName="Model.Anexos">
+              <MappingFragment StoreEntitySet="Anexos">
+                <ScalarProperty Name="StampAnexo" ColumnName="StampAnexo" />
+                <ScalarProperty Name="StampConhecimento" ColumnName="StampConhecimento" />
+                <ScalarProperty Name="NomeFicheiro" ColumnName="NomeFicheiro" />
+                <ScalarProperty Name="Ficheiro" ColumnName="Ficheiro" />
+                <ScalarProperty Name="Ousrinis" ColumnName="Ousrinis" />
+                <ScalarProperty Name="Ousrdata" ColumnName="Ousrdata" />
+                <ScalarProperty Name="Ousrhora" ColumnName="Ousrhora" />
+                <ScalarProperty Name="Usrinis" ColumnName="Usrinis" />
+                <ScalarProperty Name="Usrdata" ColumnName="Usrdata" />
+                <ScalarProperty Name="Usrhora" ColumnName="Usrhora" />
+                <ScalarProperty Name="DataSincronizacao" ColumnName="DataSincronizacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BasesDados">
+            <EntityTypeMapping TypeName="Model.BasesDados">
+              <MappingFragment StoreEntitySet="BasesDados">
+                <ScalarProperty Name="StampBaseDados" ColumnName="StampBaseDados" />
+                <ScalarProperty Name="StampProjeto" ColumnName="StampProjeto" />
+                <ScalarProperty Name="Servername" ColumnName="Servername" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Initialcatalog" ColumnName="Initialcatalog" />
+                <ScalarProperty Name="Encrypt" ColumnName="Encrypt" />
+                <ScalarProperty Name="Trustservercertificate" ColumnName="Trustservercertificate" />
+                <ScalarProperty Name="Ousrinis" ColumnName="Ousrinis" />
+                <ScalarProperty Name="Ousrdata" ColumnName="Ousrdata" />
+                <ScalarProperty Name="Ousrhora" ColumnName="Ousrhora" />
+                <ScalarProperty Name="Usrinis" ColumnName="Usrinis" />
+                <ScalarProperty Name="Usrdata" ColumnName="Usrdata" />
+                <ScalarProperty Name="Usrhora" ColumnName="Usrhora" />
+                <ScalarProperty Name="DataSincronizacao" ColumnName="DataSincronizacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Conhecimentos">
+            <EntityTypeMapping TypeName="Model.Conhecimentos">
+              <MappingFragment StoreEntitySet="Conhecimentos">
+                <ScalarProperty Name="StampConhecimento" ColumnName="StampConhecimento" />
+                <ScalarProperty Name="StampProjeto" ColumnName="StampProjeto" />
+                <ScalarProperty Name="StampSubtipo" ColumnName="StampSubtipo" />
+                <ScalarProperty Name="StampTipo" ColumnName="StampTipo" />
+                <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+                <ScalarProperty Name="Metadados" ColumnName="Metadados" />
+                <ScalarProperty Name="Ecra" ColumnName="Ecra" />
+                <ScalarProperty Name="Mensagem" ColumnName="Mensagem" />
+                <ScalarProperty Name="Teclas" ColumnName="Teclas" />
+                <ScalarProperty Name="Tabela" ColumnName="Tabela" />
+                <ScalarProperty Name="NivelAprovacao" ColumnName="NivelAprovacao" />
+                <ScalarProperty Name="Ousrinis" ColumnName="Ousrinis" />
+                <ScalarProperty Name="Ousrdata" ColumnName="Ousrdata" />
+                <ScalarProperty Name="Ousrhora" ColumnName="Ousrhora" />
+                <ScalarProperty Name="Usrinis" ColumnName="Usrinis" />
+                <ScalarProperty Name="Usrdata" ColumnName="Usrdata" />
+                <ScalarProperty Name="Usrhora" ColumnName="Usrhora" />
+                <ScalarProperty Name="DataSincronizacao" ColumnName="DataSincronizacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Entidades">
+            <EntityTypeMapping TypeName="Model.Entidades">
+              <MappingFragment StoreEntitySet="Entidades">
+                <ScalarProperty Name="StampEntidade" ColumnName="StampEntidade" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Morada" ColumnName="Morada" />
+                <ScalarProperty Name="Localidade" ColumnName="Localidade" />
+                <ScalarProperty Name="CodPostal" ColumnName="CodPostal" />
+                <ScalarProperty Name="Telemovel" ColumnName="Telemovel" />
+                <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Numero" ColumnName="Numero" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Site" ColumnName="Site" />
+                <ScalarProperty Name="Ousrinis" ColumnName="Ousrinis" />
+                <ScalarProperty Name="Ousrdata" ColumnName="Ousrdata" />
+                <ScalarProperty Name="Ousrhora" ColumnName="Ousrhora" />
+                <ScalarProperty Name="Usrinis" ColumnName="Usrinis" />
+                <ScalarProperty Name="Usrdata" ColumnName="Usrdata" />
+                <ScalarProperty Name="Usrhora" ColumnName="Usrhora" />
+                <ScalarProperty Name="DataSincronizacao" ColumnName="DataSincronizacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pessoas">
+            <EntityTypeMapping TypeName="Model.Pessoas">
+              <MappingFragment StoreEntitySet="Pessoas">
+                <ScalarProperty Name="StampPessoa" ColumnName="StampPessoa" />
+                <ScalarProperty Name="StampEntidades" ColumnName="StampEntidades" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Morada" ColumnName="Morada" />
+                <ScalarProperty Name="Localidade" ColumnName="Localidade" />
+                <ScalarProperty Name="CodPostal" ColumnName="CodPostal" />
+                <ScalarProperty Name="Telemovel" ColumnName="Telemovel" />
+                <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Numero" ColumnName="Numero" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Site" ColumnName="Site" />
+                <ScalarProperty Name="Foto" ColumnName="Foto" />
+                <ScalarProperty Name="Ousrinis" ColumnName="Ousrinis" />
+                <ScalarProperty Name="Ousrdata" ColumnName="Ousrdata" />
+                <ScalarProperty Name="Ousrhora" ColumnName="Ousrhora" />
+                <ScalarProperty Name="Usrinis" ColumnName="Usrinis" />
+                <ScalarProperty Name="Usrdata" ColumnName="Usrdata" />
+                <ScalarProperty Name="Usrhora" ColumnName="Usrhora" />
+                <ScalarProperty Name="DataSincronizacao" ColumnName="DataSincronizacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Projetos">
+            <EntityTypeMapping TypeName="Model.Projetos">
+              <MappingFragment StoreEntitySet="Projetos">
+                <ScalarProperty Name="StampProjeto" ColumnName="StampProjeto" />
+                <ScalarProperty Name="StampEntidade" ColumnName="StampEntidade" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Morada" ColumnName="Morada" />
+                <ScalarProperty Name="Localidade" ColumnName="Localidade" />
+                <ScalarProperty Name="CodPostal" ColumnName="CodPostal" />
+                <ScalarProperty Name="Telemovel" ColumnName="Telemovel" />
+                <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Site" ColumnName="Site" />
+                <ScalarProperty Name="Descricacao" ColumnName="Descricacao" />
+                <ScalarProperty Name="Ousrinis" ColumnName="Ousrinis" />
+                <ScalarProperty Name="Ousrdata" ColumnName="Ousrdata" />
+                <ScalarProperty Name="Ousrhora" ColumnName="Ousrhora" />
+                <ScalarProperty Name="Usrinis" ColumnName="Usrinis" />
+                <ScalarProperty Name="Usrdata" ColumnName="Usrdata" />
+                <ScalarProperty Name="Usrhora" ColumnName="Usrhora" />
+                <ScalarProperty Name="NomeConsultor" ColumnName="NomeConsultor" />
+                <ScalarProperty Name="DataSincronizacao" ColumnName="DataSincronizacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subtipos">
+            <EntityTypeMapping TypeName="Model.Subtipos">
+              <MappingFragment StoreEntitySet="Subtipos">
+                <ScalarProperty Name="StampSubtipo" ColumnName="StampSubtipo" />
+                <ScalarProperty Name="StampTipo" ColumnName="StampTipo" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+                <ScalarProperty Name="Ousrinis" ColumnName="Ousrinis" />
+                <ScalarProperty Name="Ousrdata" ColumnName="Ousrdata" />
+                <ScalarProperty Name="Ousrhora" ColumnName="Ousrhora" />
+                <ScalarProperty Name="Usrinis" ColumnName="Usrinis" />
+                <ScalarProperty Name="Usrdata" ColumnName="Usrdata" />
+                <ScalarProperty Name="Usrhora" ColumnName="Usrhora" />
+                <ScalarProperty Name="DataSincronizacao" ColumnName="DataSincronizacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tabelas">
+            <EntityTypeMapping TypeName="Model.Tabelas">
+              <MappingFragment StoreEntitySet="Tabelas">
+                <ScalarProperty Name="StampTabela" ColumnName="StampTabela" />
+                <ScalarProperty Name="StampTipo" ColumnName="StampTipo" />
+                <ScalarProperty Name="StampSubtipo" ColumnName="StampSubtipo" />
+                <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+                <ScalarProperty Name="QueryString" ColumnName="QueryString" />
+                <ScalarProperty Name="Ousrinis" ColumnName="Ousrinis" />
+                <ScalarProperty Name="Ousrdata" ColumnName="Ousrdata" />
+                <ScalarProperty Name="Ousrhora" ColumnName="Ousrhora" />
+                <ScalarProperty Name="Usrinis" ColumnName="Usrinis" />
+                <ScalarProperty Name="Usrdata" ColumnName="Usrdata" />
+                <ScalarProperty Name="Usrhora" ColumnName="Usrhora" />
+                <ScalarProperty Name="DataSincronizacao" ColumnName="DataSincronizacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tipos">
+            <EntityTypeMapping TypeName="Model.Tipos">
+              <MappingFragment StoreEntitySet="Tipos">
+                <ScalarProperty Name="StampTipo" ColumnName="StampTipo" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+                <ScalarProperty Name="Ousrinis" ColumnName="Ousrinis" />
+                <ScalarProperty Name="Ousrdata" ColumnName="Ousrdata" />
+                <ScalarProperty Name="Ousrhora" ColumnName="Ousrhora" />
+                <ScalarProperty Name="Usrinis" ColumnName="Usrinis" />
+                <ScalarProperty Name="Usrdata" ColumnName="Usrdata" />
+                <ScalarProperty Name="Usrhora" ColumnName="Usrhora" />
+                <ScalarProperty Name="DataSincronizacao" ColumnName="DataSincronizacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Utilizadores">
+            <EntityTypeMapping TypeName="Model.Utilizadores">
+              <MappingFragment StoreEntitySet="Utilizadores">
+                <ScalarProperty Name="StampUtilizador" ColumnName="StampUtilizador" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Morada" ColumnName="Morada" />
+                <ScalarProperty Name="Localidade" ColumnName="Localidade" />
+                <ScalarProperty Name="CodPostal" ColumnName="CodPostal" />
+                <ScalarProperty Name="Telemovel" ColumnName="Telemovel" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Foto" ColumnName="Foto" />
+                <ScalarProperty Name="Ousrinis" ColumnName="Ousrinis" />
+                <ScalarProperty Name="Ousrdata" ColumnName="Ousrdata" />
+                <ScalarProperty Name="Ousrhora" ColumnName="Ousrhora" />
+                <ScalarProperty Name="Usrinis" ColumnName="Usrinis" />
+                <ScalarProperty Name="Usrdata" ColumnName="Usrdata" />
+                <ScalarProperty Name="Usrhora" ColumnName="Usrhora" />
+                <ScalarProperty Name="DataSincronizacao" ColumnName="DataSincronizacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

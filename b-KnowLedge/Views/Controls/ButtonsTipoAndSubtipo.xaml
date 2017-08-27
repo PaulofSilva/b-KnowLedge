@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="b_KnowLedge.Views.Controls.ButtonsTipoAndSubtipo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Button Grid.Row="0" Margin="10,10,0,0" Name="Home" Click="Home_Click_1" HorizontalAlignment="Left" Background="Transparent" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"  Width="Auto" Height="Auto" BorderBrush="Transparent" BorderThickness="0">
+            <Image Source="/b-KnowLedge;component/Imagens/Home_new.png" Stretch="None"></Image>
+        </Button>
+
+        <Rectangle Margin="55,15,0,0" Width="2" HorizontalAlignment="Left" Height="Auto" Fill="LightGray"></Rectangle>
+
+        <Button Grid.Row="0" Margin="0,10,110,0" Name="Add" Click="Add_Click_1" HorizontalAlignment="Right" Background="Transparent" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"  Width="Auto" Height="Auto" BorderBrush="Transparent" BorderThickness="0">
+            <Image Source="/b-KnowLedge;component/Imagens/Add_new.png" Stretch="None"></Image>
+        </Button>
+
+        <Button Grid.Row="0" Margin="66,10,0,0" Name="Refresh" Click="Refresh_Click_1" HorizontalAlignment="Left" Background="Transparent" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"  Width="Auto" Height="Auto" BorderBrush="Transparent" BorderThickness="0">
+            <Image Source="/b-KnowLedge;component/Imagens/Refresh_new.png" Stretch="None"></Image>
+        </Button>
+
+        <Button Grid.Row="0" Margin="0,10,20,0" Name="Delete" Click="Delete_Click_1" HorizontalAlignment="Right" Background="Transparent" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"  Width="Auto" Height="Auto" BorderBrush="Transparent" BorderThickness="0">
+            <Image Source="/b-KnowLedge;component/Imagens/delete_new.png" Stretch="None"></Image>
+        </Button>
+
+        <Button Grid.Row="0" Margin="0,10,65,0" Name="Edit" Click="Edit_Click_1" HorizontalAlignment="Right" Background="Transparent" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"  Width="Auto" Height="Auto" BorderBrush="Transparent" BorderThickness="0">
+            <Image Source="/b-KnowLedge;component/Imagens/Edit_new.png" Stretch="None"></Image>
+        </Button>
+
+        <Button Grid.Row="0" Margin="0,10,155,0" Name="Save" IsEnabled="False" Click="Save_Click_1" HorizontalAlignment="Right" Background="Transparent" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"  Width="Auto" Height="Auto" BorderBrush="Transparent" BorderThickness="0">
+            <Image Name="ImageSave" Source="/b-KnowLedge;component/Imagens/save_new.png" Opacity="0.3" Stretch="None"></Image>
+        </Button>
+
+    </Grid>
+</UserControl>
+

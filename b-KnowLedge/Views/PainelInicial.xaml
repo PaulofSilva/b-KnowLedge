@@ -1,0 +1,89 @@
+﻿<Window xmlns:Views="clr-namespace:b_KnowLedge.Views"  x:Class="b_KnowLedge.Views.PainelInicial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="b-Knowledge" SizeChanged="Window_SizeChanged_1" Background="#F7F9F8" Height="Auto" Width="Auto" WindowState="Maximized" Icon="/b-KnowLedge;component/Imagens/b-knowledge icon small.png" >
+
+    
+    <Grid>
+        
+        
+        <DockPanel MinHeight="50" MinWidth="50" LastChildFill="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.Column="0" Margin="0,2,0,0" Grid.ColumnSpan="1" Grid.Row="0" Grid.RowSpan="1" Name="dockPanel1">
+            <StackPanel DockPanel.Dock="Top" >
+                <Grid>
+                    
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0" />
+                            <!--<RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="28" />-->
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                   
+                <Image Grid.Column="0" Grid.Row="0" Source="/b-KnowLedge;component/Imagens/b-AGILE left.jpg" HorizontalAlignment="Left" MaxHeight="50" Stretch="Uniform" />
+                    <Image Grid.Column="1" Grid.Row="0" Margin="0,0,12,0" Source="/b-KnowLedge;component/Imagens/b-knowledge logo small.png" HorizontalAlignment="Right" MaxHeight="50" Stretch="Uniform" />
+                </Grid>
+            </StackPanel>
+
+            <Expander DockPanel.Dock="Left"  VerticalAlignment="Top"   
+                  Name="AnimatedExpander" 
+                  ExpandDirection="Left"
+                  HorizontalAlignment="Left"
+                  IsExpanded="True"   
+                  BorderThickness="0"  
+                  Width="Auto" MinWidth="25" SizeChanged="AnimatedExpander_SizeChanged" >
+                <!--<Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" Width="195" HorizontalAlignment="Left" Source="/b-KnowLedge;component/Imagens/b-knowledge logo mega small.png" Stretch="None"/>-->
+                    <StackPanel Grid.Row="1">
+                    <StackPanel Name="teste" SizeChanged="teste_SizeChanged">
+                        <!--<Views:LeftPainelControl x:Name="tt" />-->
+                    </StackPanel>
+                </StackPanel>
+                <!--</Grid>-->
+
+                <Expander.Triggers>
+
+                    <EventTrigger RoutedEvent="Expander.Expanded">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard >
+                                    <DoubleAnimation    
+                                                 To="220"   
+                                                 Storyboard.TargetName="AnimatedExpander"   
+                                                 Storyboard.TargetProperty="Width"   
+                                                 Duration="0:00:00.30"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+
+                    <EventTrigger RoutedEvent="Expander.Collapsed">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard >
+                                    <DoubleAnimation From="220"  
+                                                 To="20"   
+                                                 Storyboard.TargetName="AnimatedExpander"   
+                                                 Storyboard.TargetProperty="Width"   
+                                                 Duration="0:00:00.30"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+
+                </Expander.Triggers>
+            </Expander>
+            <Border Name="borderMedida">
+            <StackPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center" Width="Auto" Name="stackpanelcentro">
+                <!--<Views:UserControlCentro x:Name="Paineltab" HorizontalAlignment="Left"/>-->
+            </StackPanel>
+            </Border>
+        </DockPanel>
+    </Grid>
+</Window>

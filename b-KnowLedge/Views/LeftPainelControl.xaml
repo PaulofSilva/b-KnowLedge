@@ -1,0 +1,527 @@
+﻿<UserControl  xmlns:Primitives="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Layout.Toolkit" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:Controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Layout.Toolkit" x:Class="b_KnowLedge.Views.LeftPainelControl" 
+             mc:Ignorable="d" x:Name="UsercontrolLeft" SizeChanged="UserControl_SizeChanged_1">
+
+    <Grid Margin="4,0">
+
+        <Grid.Resources>
+            <ResourceDictionary Source="..\Themes\CustomAccordion.xaml" />
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+        </Grid>
+
+        <Controls:Accordion 
+                    x:Name="MainNavigationAccordion" 
+                    HorizontalAlignment="Stretch"
+                    Width="190" Cursor="Hand">
+            <Controls:AccordionItem>
+                <Controls:AccordionItem.Header>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock 
+                                Text="Conhecimento" FontWeight="Bold"
+                                Grid.Column="0" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,4,63,4" />
+                        <Image 
+                                    Grid.Column="1" 
+                                     VerticalAlignment="Center" 
+                                    HorizontalAlignment="Right" 
+                                    Source="/b-KnowLedge;component/Imagens/KnowLedge.png" Stretch="None" />
+                    </Grid>
+                </Controls:AccordionItem.Header>
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Background="LightGray">
+                            <Grid HorizontalAlignment="Right">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock 
+                                Text="Conhecimento" FontWeight="Bold"
+                                Grid.Column="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,4,10.097,4" />
+
+                            </Grid>
+                        </StackPanel>
+                        <DockPanel Grid.Row="1" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/listLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate9">
+                                Listagem
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel Grid.Row="2" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/AddLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate10">
+                                Adicionar
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+
+                        <Rectangle Margin="0,10,0,0" Grid.Row="3" Fill="Black" Height="1" Width="Auto"></Rectangle>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Background="LightGray">
+                            <Grid HorizontalAlignment="Right">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock 
+                                Text="Importação" FontWeight="Bold"
+                                Grid.Column="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,4,10.097,4" />
+
+                            </Grid>
+                        </StackPanel>
+
+                        <DockPanel Grid.Row="1" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/DownloadLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate11">
+                                Importar
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+
+                        <Rectangle Margin="0,10,0,0" Grid.Row="3" Fill="Black" Height="1" Width="Auto"></Rectangle>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Background="LightGray">
+                            <Grid HorizontalAlignment="Right">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock 
+                                Text="Sincronização" FontWeight="Bold"
+                                Grid.Column="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,4,10.097,4" />
+
+                            </Grid>
+                        </StackPanel>
+
+                        <DockPanel Grid.Row="1" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/Synchronize.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate_1">
+                                Sincronizar
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+
+                        <Rectangle Margin="0,10,0,0" Grid.Row="3" Fill="Black" Height="1" Width="Auto"></Rectangle>
+                    </Grid>
+
+                </Grid>
+            </Controls:AccordionItem>
+
+            <Controls:AccordionItem VerticalAlignment="Center">
+                <Controls:AccordionItem.Header>
+                    <Grid VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock 
+                                    Text="Entidades" FontWeight="Bold"
+                                    Grid.Column="0" VerticalAlignment="Center" />
+                        <Image 
+                                    Grid.Column="1" 
+                                     VerticalAlignment="Center" 
+                                    HorizontalAlignment="Right" 
+                                    Source="/b-KnowLedge;component/Imagens/Empresa3.png" Stretch="None" />
+                    </Grid>
+                </Controls:AccordionItem.Header>
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Background="LightGray">
+                            <Grid HorizontalAlignment="Right">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock 
+                                Text="Entidades" FontWeight="Bold"
+                                Grid.Column="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,4,10.097,4" />
+
+                            </Grid>
+                        </StackPanel>
+                        <DockPanel Grid.Row="1" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/listLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate">
+                                Listagem
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel Grid.Row="2" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/AddLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate2">
+                                Adicionar Entidades
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+
+                        <Rectangle Margin="0,10,0,0" Grid.Row="3" Fill="Black" Height="1" Width="Auto"></Rectangle>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Background="LightGray">
+                            <Grid HorizontalAlignment="Right">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock 
+                                Text="Pessoas" FontWeight="Bold"
+                                Grid.Column="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,4,10.097,4" />
+
+                            </Grid>
+                        </StackPanel>
+
+                        <DockPanel Grid.Row="1" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/listLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate7">
+                                Listagem
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel Grid.Row="2" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/AddLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate8">
+                                Adicionar Pessoa
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+
+                        <Rectangle Margin="0,10,0,0" Grid.Row="3" Fill="Black" Height="1" Width="Auto"></Rectangle>
+                    </Grid>
+                </Grid>
+
+            </Controls:AccordionItem>
+            <Controls:AccordionItem>
+                <Controls:AccordionItem.Header>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock 
+                                Text="Projetos" FontWeight="Bold"
+                                Grid.Column="0" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,4,63,4" />
+                        <Image 
+                                    Grid.Column="1" 
+                                     VerticalAlignment="Center" 
+                                    HorizontalAlignment="Right" 
+                                    Source="/b-KnowLedge;component/Imagens/KnowLedge.png" Stretch="None" />
+                    </Grid>
+                </Controls:AccordionItem.Header>
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Background="LightGray">
+                            <Grid HorizontalAlignment="Right">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock 
+                                Text="Projetos" FontWeight="Bold"
+                                Grid.Column="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,4,10.097,4" />
+
+                            </Grid>
+                        </StackPanel>
+                        <DockPanel Grid.Row="1" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/listLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate3">
+                                Listagem
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel Grid.Row="2" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/AddLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate4">
+                                Adicionar
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+
+                        <Rectangle Margin="0,10,0,0" Grid.Row="3" Fill="Black" Height="1" Width="Auto"></Rectangle>
+                    </Grid>
+                </Grid>
+            </Controls:AccordionItem>
+
+            <Controls:AccordionItem>
+                <Controls:AccordionItem.Header>
+                    <Grid >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock 
+                                Text="Sistema" FontWeight="Bold"
+                                Grid.Column="0" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,4,10.097,4" />
+                        <Image 
+                                    Grid.Column="1" 
+                                     VerticalAlignment="Center" 
+                                    HorizontalAlignment="Right" 
+                                    Source="/b-KnowLedge;component/Imagens/System.png" Stretch="None" Width="24" Height="24" />
+                    </Grid>
+                </Controls:AccordionItem.Header>
+
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Background="LightGray">
+                            <Grid HorizontalAlignment="Right">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock 
+                                Text="Base de Dados" FontWeight="Bold"
+                                Grid.Column="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,4,10.097,4" />
+
+                            </Grid>
+                        </StackPanel>
+
+                        <DockPanel Grid.Row="1" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/listLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate5">
+                                Listagem
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel Grid.Row="2" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/AddLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate6">
+                                Adicionar BD
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+
+                        <Rectangle Margin="0,10,0,0" Grid.Row="3" Fill="Black" Height="1" Width="Auto"></Rectangle>
+                    </Grid>
+
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Background="LightGray">
+                            <Grid HorizontalAlignment="Right">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock 
+                                Text="Utilizadores" FontWeight="Bold"
+                                Grid.Column="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,4,10.097,4" />
+
+                            </Grid>
+                        </StackPanel>
+
+                        <DockPanel Grid.Row="1" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/listLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate13">
+                                Listagem
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel Grid.Row="2" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/AddLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate14">
+                                Adicionar Utilizador
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+
+                        <Rectangle Margin="0,10,0,0" Grid.Row="3" Fill="Black" Height="1" Width="Auto"></Rectangle>
+                    </Grid>
+
+                    <Grid Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Background="LightGray">
+                            <Grid HorizontalAlignment="Right">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock 
+                                Text="Tipos/Subtipos" FontWeight="Bold"
+                                Grid.Column="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,4,10.097,4" />
+
+                            </Grid>
+                        </StackPanel>
+
+                        <DockPanel Grid.Row="1" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/listLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate12">
+                                Tipos/Subtipos
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+                        <Rectangle Margin="0,10,0,0" Grid.Row="3" Fill="Black" Height="1" Width="Auto"></Rectangle>
+                    </Grid>
+
+
+                    <Grid Grid.Row="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Background="LightGray">
+                            <Grid HorizontalAlignment="Right">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock 
+                                Text="Tabelas" FontWeight="Bold"
+                                Grid.Column="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,4,10.097,4" />
+
+                            </Grid>
+                        </StackPanel>
+
+                        <DockPanel Grid.Row="2" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image  Margin="0,0,0,0" Source="/b-KnowLedge;component/Imagens/TableLeft.png" Stretch="None" />
+                            <TextBlock Margin="0, 5, 0, 0" >           
+                            <Hyperlink NavigateUri="" RequestNavigate="Hyperlink_RequestNavigate15">
+                                Tabelas
+                            </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+
+                        <Rectangle Margin="0,10,0,0" Grid.Row="3" Fill="Black" Height="1" Width="Auto"></Rectangle>
+                    </Grid>
+
+                </Grid>
+            </Controls:AccordionItem>
+
+
+
+        </Controls:Accordion>
+
+    </Grid>
+</UserControl>
